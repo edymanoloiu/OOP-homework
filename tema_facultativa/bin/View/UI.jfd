@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "5.1.0.0.51" Java: "1.7.0_09" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": sfield com.jgoodies.forms.factories.Borders DIALOG_BORDER
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "175dlu, 249dlu"
+					"$rowSpecs": "26dlu, linegap, default, linegap, 134dlu, linegap, 29dlu"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Introduceții titlul serialului căutat"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "title"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Lista serialelor urmărite este:"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 3
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "search"
+						"text": "Căutare"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 3
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list_fav"
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 5
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list_view"
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 5
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "delete"
+						"text": "Elimină serialul urmărit selectat"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 7
+						"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "168dlu, labelcompgap, 75dlu"
+						"$rowSpecs": "29dlu"
+					} ) {
+						name: "panel1"
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "add"
+							"text": "Adaugă serialul selectat la seriale urmărite"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "moreinfo"
+							"text": "More Info"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 1
+							"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 7
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 680, 390 )
+		} )
+	}
+}
